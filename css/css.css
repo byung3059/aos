@@ -2,11 +2,12 @@ body {
     padding: 100px 0;
     background: #f9f9f9;
 
+
 }
 
 .box {
     max-width: 400px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 40px auto;
     padding: 80px 32px;
     border: 1px solid #ddd;
 
@@ -45,4 +46,24 @@ p {
     margin: 0 0 16px 0;
 
 
+}
+
+@media(max-width: 1024px) {
+    body {
+        overflow-y: hidden;
+        padding: 40px 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    strong {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
 }
