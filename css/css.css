@@ -55,7 +55,7 @@ p {
     }
 
     .box {
-        overflow-y: hidden;
+        overflow: hidden;
         padding: 40px 16px;
         animation: box 10s linear infinite;
     }
