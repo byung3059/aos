@@ -1,0 +1,157 @@
+:root {
+    --desc-color: #cccccc;
+    --white-color: #f9f9f9;
+    --body-color: #111111;
+    --black-color: #111111;
+    --dots-color: #333333;
+    --dotson-color: #999999;
+    --background-color: #151515;
+    --line-color: #222222;
+    --footer-color: #000000;
+    --footerli-color: #dddddd;
+}
+
+h2,
+strong,
+p,
+a {
+    color: var(--white-color);
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.tit {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 120px 0;
+}
+
+.default .tit {
+    max-width: 1410px;
+    margin: 0 auto 40px auto;
+    color: var(--white-color);
+}
+
+.default .tit h2 {
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.default .tit .desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color: var(--desc-color);
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color: var(--desc-color);
+}
+
+.ord {
+    position: relative;
+    border: 1px solid var(--dotson-color);
+}
+
+.ord a {
+    display: block;
+    text-align: center;
+    padding: 20px 24px;
+}
+
+.ord:hover {
+    background: var(--white-color);
+    transition: 0.5s;
+}
+
+.ord a:hover {
+    color: var(--black-color);
+    transition: 0.5s;
+}
+
+.btn a {
+    border: 1px solid var(--dotson-color);
+}
+
+@media(max-width:768px) {
+    .default {
+        padding: 80px 16px;
+    }
+
+    .default .tit {
+        max-width: 1410px;
+        margin: 0 auto 40px auto;
+        color: var(--white-color);
+    }
+
+    .default .tit h2 {
+        text-transform: uppercase;
+        margin: 0 0 16px 0;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--white-color);
+    }
+
+    .default .tit .desc {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        color: var(--desc-color);
+    }
+
+    .desc {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        color: var(--desc-color);
+    }
+
+    .ord a {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .btn a {
+        border: 1px solid var(--dotson-color);
+
+        font-size: 14px
+    }
+}
+
+@media(max-width:600px) {
+    .default .tit h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+}

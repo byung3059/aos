@@ -1,0 +1,12 @@
+.sub_visual .visual01 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.sub_visual .visual01 video {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
